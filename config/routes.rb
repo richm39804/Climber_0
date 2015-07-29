@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  get 'coupons/show'
+
+  get 'coupons/new'
+
+  get 'coupons/update'
+
+  get 'categories/show'
+
+  get 'categories/new'
+
+  get 'categories/update'
+
+  get 'user/index'
+
+#   RESTful Routes
+# Named Routes
+# Nested Routes
+# Regular Routes
+# Default Routes
+  root 'welcome#index'
+
+
+
+
   get 'coupons_a/new'
 
   get 'coupons_a/update'
@@ -18,6 +42,8 @@ Rails.application.routes.draw do
   get 'categories_a/update'
 
   get 'categories_a/new'
+
+  get 'categories_a/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
