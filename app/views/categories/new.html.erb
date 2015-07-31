@@ -1,17 +1,13 @@
-<h1>Categories#new</h1>
-<%= form_for :Category do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+<%= form_for(@category, url: categories_path,) do |f| %>
 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
+<%= f.text_field :name, class: "form-control", placeholder: "Which category i.e. Home Food Travel", autofocus: true %>
 
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+  <%= f.text_field :img_url, class: "form-control", placeholder: "Img_url" %>
+
+ <%= f.submit "Add to Category", class: "btn btn-success" %>
+
+
+
+  <% end %>
+
 

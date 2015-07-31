@@ -1,18 +1,15 @@
-<h1>Sign up</h1>
-
-<%= form_for(:session, url: sessions_path,) do |f| %>
-
-
-  <%= f.text_field :email, class: "form-control", placeholder: "Email address", autofocus: true %>
-
-  <%= f.text_field :password, class: "form-control", placeholder: "Password" %>
-  <%= f.text_field :password, class: "form-control", placeholder: "Confirm Password" %>
-
-
-  <button type="button" class="btn btn-success"><%= link_to "Sign up", categories_show_path %></button>
-
+<h1>Logged in!</h1>
+<h1>Login</h1>
+<%= form_tag sessions_path do %>
+  <div class="field">
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Log in" %></div>
 <% end %>
 
-
-
-
+<button type="button" class="btn btn-md btn-success"><%= link_to "Categories", new_category_path(current_user) %></button>

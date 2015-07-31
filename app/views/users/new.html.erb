@@ -1,16 +1,26 @@
-<h1>Login or Sign Up</h1>
-<%= form_tag sessions_path do %>
-    <div class="field">
-      <%= label_tag :email %>
-      <%= text_field_tag :email, params[:email] %>
-    </div>
-    <div class="field">
-      <%= label_tag :password %>
-      <%= password_field_tag :password %>
-    </div>
-  <button type="button" class="btn btn-success"><%= link_to "Login", categories_a_show_path %></button>
-
-<button type="button" class="btn btn-success"><%= link_to "Sign up", new_session_path %></button>
+<h1>Sign Up</h1>
+<%= form_for @user do |f| %>
+<% if @user.errors.any? %>
+  <div class="error_messages">
+    <h2>Form is invalid</h2>
+    <ul>
+      <% for message in @user.errors.full_messages %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<div class="field">
+  <%= f.label :email %>
+  <%= f.text_field :email %>
 </div>
-  <% end %>
-
+<div class="field">
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+</div>
+<div class="field">
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
+</div>
+<div class="actions"><%= f.submit %></div>
+<% end %>

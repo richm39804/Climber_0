@@ -1,0 +1,13 @@
+<h1>Categories</h1>
+
+ <p>choose a coupon category</p>
+
+
+ <ul><% @categories.each do |category| %>
+  <li><strong><%= category.name %> </strong></li>
+  <li><strong><%= category.img_url %> </strong></li>
+<% end %>
+ </ul>
+
+
+

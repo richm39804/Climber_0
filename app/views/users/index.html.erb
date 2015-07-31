@@ -1,7 +1,8 @@
-<h1>This is Working </h1>
+<h1>List of current users </h1>
 <% @users.each do |user| %>
   <p>
     <%= user.email %><br>
     <%= user.password_digest %>
   </p>
 <% end %>
+<%= link_to "Start Saving!", new_session_path(current_user) %>

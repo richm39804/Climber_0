@@ -1,2 +1,13 @@
-<h1>Sessions#create</h1>
-<p>Find me in app/views/sessions/create.html.erb</p>
+<h1>welcome!</h1>
+<%= form_for(:session, url: sessions_path,) do |f| %>
+
+
+  <%= f.text_field :email, class: "form-control", placeholder: "Email address", autofocus: true %>
+
+  <%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+
+ <%= f.submit "Sign up", class: "btn btn-success" %>
+
+
+
+  <% end %>
