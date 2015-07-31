@@ -35,7 +35,7 @@ Ruby on Rails(postgresql)
 Deployment instructions $ bin/rails server This will fire up WEBrick, a web server distributed with Ruby by default. To see your application in action, open a browser window and navigate to http://localhost:3000. You should see the Rails default information page:
 
 
--
+- App @ https://guarded-cliffs-5874.herokuapp.com/
 
 
 
