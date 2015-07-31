@@ -4,6 +4,10 @@
 
 #User Stories
 ![Macdown logo](http://i.imgur.com/umwdhdY.png)
+- As a user I would like to securely sign into the app
+- As a user I would like to view and add to coupons database
+- As a user I would like to find the live app on heroku
+- As a user I would like to $ave with all the great offers
 
 #Technologies
 HTML
