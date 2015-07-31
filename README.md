@@ -1,21 +1,24 @@
 == README
-
+A readme.md file with explanations of:
+The technologies used
+Installation instructions (seed data, etc.)
+Unsolved problems, etc.
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - Rails 4.2.3
 
-* System dependencies
+* System dependencies - see Gemfile
 
-* Configuration
+* Configuration - ruby on rails - heroku platform
 
-* Database creation
+* Database creation - admin and user CRUD db
 
-* Database initialization
+* Database initialization - initialized
 
-* How to run the test suite
+* How to run the test suite -
 
 * Services (job queues, cache servers, search engines, etc.)
 

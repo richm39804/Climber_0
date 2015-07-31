@@ -1,0 +1,7 @@
+<h1>This is Working </h1>
+<% @users.each do |user| %>
+  <p>
+    <%= user.email %><br>
+    <%= user.password_digest %>
+  </p>
+<% end %>

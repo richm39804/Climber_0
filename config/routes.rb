@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+  root 'users#new'
+
+  resources :users
+
+
+  get '/login', to: 'sessions#new'
+   resources :sessions, only: [:new, :create, :destroy]
+
+  delete '/logout', to: 'sessions#destroy'
+
+  get 'welcome/index'
   get 'coupons/show'
 
   get 'coupons/new'
@@ -11,14 +23,14 @@ Rails.application.routes.draw do
 
   get 'categories/update'
 
-  get 'user/index'
+
 
 #   RESTful Routes
 # Named Routes
 # Nested Routes
 # Regular Routes
 # Default Routes
-  root 'welcome#index'
+
 
 
 

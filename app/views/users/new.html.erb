@@ -1,0 +1,16 @@
+<h1>Login or Sign Up</h1>
+<%= form_tag sessions_path do %>
+    <div class="field">
+      <%= label_tag :email %>
+      <%= text_field_tag :email, params[:email] %>
+    </div>
+    <div class="field">
+      <%= label_tag :password %>
+      <%= password_field_tag :password %>
+    </div>
+  <button type="button" class="btn btn-success"><%= link_to "Login", categories_a_show_path %></button>
+
+<button type="button" class="btn btn-success"><%= link_to "Sign up", new_session_path %></button>
+</div>
+  <% end %>
+
