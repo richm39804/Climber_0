@@ -3,7 +3,7 @@
 
 
 #User Stories
-http://i.imgur.com/umwdhdY.png
+![Macdown logo](http://i.imgur.com/umwdhdY.png)
 
 #Technologies
 HTML
